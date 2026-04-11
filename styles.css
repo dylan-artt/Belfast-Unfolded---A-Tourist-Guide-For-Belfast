@@ -9,21 +9,27 @@ body {
     background-position: top;
     background-repeat: no-repeat;
 
-    height: 100%;
     font-family: Helvetica, sans-serif;
 }
-
-ul {
+div.hotbar{
+    background-color: #4b0e3c;
+    padding:auto;
+    float:top;
+    height: 20%;
+    width:100%
+}
+div.hotbar ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: #4b0e3c;
+    ;
 }
 
-ul li {
+div.hotbar ul li {
     float: left;
+    align-content: center;
 }
 
-ul li a {
+div.hotbar ul li a {
     display: block;
     color: white;
     
@@ -34,7 +40,13 @@ ul li a {
     font-weight: bold;
 }
 
-ul li a:hover {
+div.hotbar ul li a:hover {
     background-color: #111111;
 }
 
+#belfast-logo{
+    position:relative;
+    padding: 5px;
+    height:50px;
+    width:auto;
+}

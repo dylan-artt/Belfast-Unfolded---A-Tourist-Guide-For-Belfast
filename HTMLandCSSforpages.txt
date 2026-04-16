@@ -1,0 +1,96 @@
+CSS:
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #ffb400;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffb400;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #1a1a1a;
+    color: white;
+}
+
+
+HTML:
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatever the page name is</title>
+    <link rel="stylesheet" href="travelpagestyles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Belfast<span>Unfolded</span></div>
+            <ul>
+                <li><a href="history.html">History</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="travel.html">Getting Here</a></li>
+                <li><a href="packages.html" class="nav-package">Packages</a></li>
+                <button id="cta-btn">Plan Your Trip</button>
+            </ul>
+        </nav>
+    </header> 
+
+    /* Put whatever you need to inbetween these two */
+
+    <footer>
+        <p>&copy; 2026 Belfast Unfolded. Built for the curious traveler.</p>
+    </footer>
+</body>

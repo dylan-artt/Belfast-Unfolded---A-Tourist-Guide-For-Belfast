@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>History of Belfast | BELFASTUNFOLDED </title>
+  <link rel="stylesheet" href="history.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="#">BELFASTUNFOLDED</a>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">History</a></li>
+        <li><a href="#">Attractions</a></li>
+        
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+    </div>
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#" class="active">History</a></li>
+      <li><a href="#">Attractions</a></li>
+      <li><a href="#">Food &amp; Drink</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle">Discover the Past</p>
+      <h1 class="hero-title">The History of Belfast</h1>
+      <p class="hero-desc">From a small ford on the River Lagan to a vibrant modern city — explore over 400 years of Belfast's remarkable story.</p>
+      <a href="#timeline" class="btn-primary">Explore the Timeline</a>
+    </div>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="intro section">
+    <div class="container">
+      <h2 class="section-title">A City Forged Through History</h2>
+      <p>Belfast, the capital of Northern Ireland, has a rich and complex history spanning centuries. Its story is one of growth, industry, conflict, and remarkable resilience. Today it stands as one of the UK and Ireland's most exciting cities to visit — and understanding its past makes every corner of it more meaningful.</p>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section section" id="timeline">
+    <div class="container">
+      <h2 class="section-title">Belfast Through the Ages</h2>
+      <p class="section-subtitle">Click any era to learn more</p>
+      <div class="timeline" id="timelineContainer">
+
+        <div class="timeline-item" data-era="early">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Pre-1600s</span>
+            <h3>Early Settlement</h3>
+            <p>A small ford crossing at the mouth of the River Farset, where it meets the Lagan.</p>
+            <button class="read-more-btn" data-era="early">Read More</button>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-era="plantation">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1600s</span>
+            <h3>The Plantation Era</h3>
+            <p>Belfast receives its first Royal Charter in 1613, establishing it as a town under the Ulster Plantation.</p>
+            <button class="read-more-btn" data-era="plantation">Read More</button>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-era="industrial">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1800s</span>
+            <h3>Industrial Revolution</h3>
+            <p>Belfast becomes a global powerhouse in linen manufacturing and shipbuilding, earning the nickname "Linenopolis".</p>
+            <button class="read-more-btn" data-era="industrial">Read More</button>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-era="titanic">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1912</span>
+            <h3>RMS Titanic</h3>
+            <p>The Titanic, built at Harland &amp; Wolff shipyard in Belfast, sets sail on her ill-fated maiden voyage.</p>
+            <button class="read-more-btn" data-era="titanic">Read More</button>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-era="troubles">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1960s–1990s</span>
+            <h3>The Troubles</h3>
+            <p>Decades of political and sectarian conflict between unionist and nationalist communities shape the city.</p>
+            <button class="read-more-btn" data-era="troubles">Read More</button>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-era="peace">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">1998–Present</span>
+            <h3>Peace &amp; Renaissance</h3>
+            <p>The Good Friday Agreement brings peace, and Belfast transforms into a thriving tourist destination and cultural hub.</p>
+            <button class="read-more-btn" data-era="peace">Read More</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <!-- Facts Section -->
+  <section class="facts-section section">
+    <div class="container">
+      <h2 class="section-title">Belfast By Numbers</h2>
+      <div class="facts-grid">
+        <div class="fact-card">
+          <span class="fact-number" data-target="400">0</span><span class="fact-symbol">+</span>
+          <p>Years of recorded history</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-number" data-target="340000">0</span><span class="fact-symbol">+</span>
+          <p>Population today</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-number" data-target="1912">0</span>
+          <p>Year the Titanic launched</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-number" data-target="1998">0</span>
+          <p>Good Friday Agreement signed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="quote-section">
+    <div class="container">
+      <blockquote>
+        "Belfast is a city that has been through the fire and come out the other side — stronger, more open, and more welcoming than ever."
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Must-Visit History Spots -->
+  <section class="spots-section section">
+    <div class="container">
+      <h2 class="section-title">Historic Places to Visit</h2>
+      <div class="spots-grid">
+        <div class="spot-card">
+          <div class="spot-icon">🚢</div>
+          <h3>Titanic Belfast</h3>
+          <p>The world-leading visitor experience telling the story of the most famous ship ever built, right where she was made.</p>
+        </div>
+        <div class="spot-card">
+          <div class="spot-icon">🏛️</div>
+          <h3>Belfast City Hall</h3>
+          <p>An iconic landmark built in 1906, the grand baroque building at the heart of the city centre.</p>
+        </div>
+        <div class="spot-card">
+          <div class="spot-icon">🎨</div>
+          <h3>Falls &amp; Shankill Murals</h3>
+          <p>The famous political murals of West Belfast tell the story of the Troubles in vivid colour.</p>
+        </div>
+        <div class="spot-card">
+          <div class="spot-icon">🏰</div>
+          <h3>Belfast Castle</h3>
+          <p>A stunning Victorian castle sitting on the slopes of Cave Hill, with panoramic views across the city.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Visit Belfast Tourism Website | Group Project</p>
+    </div>
+  </footer>
+
+  <script src="history.js"></script>
+</body>
+</html>

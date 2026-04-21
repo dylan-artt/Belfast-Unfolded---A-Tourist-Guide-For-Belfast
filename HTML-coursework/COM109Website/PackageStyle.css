@@ -1,0 +1,171 @@
+/* General Layout */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', sans-serif; 
+}
+
+body { 
+    background: #f4f4f4; 
+    text-align: center; 
+}
+
+/* 2. NAVIGATION */
+header {
+    background: #1a1a1a;
+    color: white;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.logo span { color: #ffb400; }
+
+nav ul { 
+    display: flex; 
+    list-style: none; 
+    align-items: center; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+#cta-btn {
+    margin-left: 20px;
+    padding: 8px 20px;
+    background: #ffb400;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* The Grid System - 3 Wide */
+.grid-section { padding: 50px 5%; }
+.grid-section h1 { font-size: 2.5rem; margin-bottom: 10px; }
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* THE SQUARE CARD - UPDATED FOR GALLERY */
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1 / 1; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- GALLERY WITH DOTS --- */
+.package-gallery {
+    height: 45%; 
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Allows us to position dots over the image if we want */
+    border-bottom: 3px solid #ffb400;
+}
+
+.main-img {
+    height: 85%; /* Give more room to the image */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.thumb-strip {
+    height: 15%; /* Smaller area for dots */
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centers the dots horizontally */
+    align-items: center;     /* Centers the dots vertically */
+    gap: 8px;                /* Space between dots */
+    background: #1a1a1a;
+}
+
+.thumb {
+    width: 8px;              /* Make them small */
+    height: 8px;             /* Make them small */
+    background-color: #555;  /* Grey by default */
+    border-radius: 50%;      /* This makes them circles */
+    cursor: pointer;
+    transition: 0.3s;
+    background-image: none !important; /* This hides the actual image in the dot */
+}
+
+.thumb:hover {
+    background-color: #ffb400; /* Turns amber when you hover */
+    transform: scale(1.2);
+}
+
+.card-body {
+    height: 55%; /* Text bottom half */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body h3 { 
+    font-size: 1.1rem; 
+    margin-bottom: 5px; 
+}
+
+.card-body p { 
+    font-size: 0.85rem; 
+    color: #666; 
+    margin-bottom: 10px; 
+}
+
+.price-tag {
+    background: #1a1a1a;
+    color: #ffb400;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.btn-primary {
+    background: #ffb400;
+    border: none;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 900px) {
+    .card-container { 
+        grid-template-columns: 1fr; 
+        max-width: 400px; 
+    }
+}

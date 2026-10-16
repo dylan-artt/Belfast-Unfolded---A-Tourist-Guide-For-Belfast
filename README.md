@@ -28,6 +28,7 @@ The website provides useful information to users to plan their trips to Belfast.
 - JavaScript
 - Developed on Visual Studio Code
 
-## Contribution
-This project was developed by a group of 4. My contribution to the project was developing the "Travelling To Belfast" page and refining pages 
-created by my team members. We all went through each page and made our own refinements and fixes based on what refinements or bugs we could find.
+## Contributions
+This project was developed by a group of 4 members. Our plan for this project was to divide our work across sections which we would bring together
+and let our teammates test our sections. This allowed us to refine any bugs or potential improvements that may have been missed during development. 
+Our project gave us new experience in web development, collaboration and problem-solving
